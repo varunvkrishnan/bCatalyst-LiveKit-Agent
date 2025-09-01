@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  agent:
+    build: .
+    env_file:
+      - .env.local
+    command: uv run src/agent.py start
